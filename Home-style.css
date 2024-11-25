@@ -1,0 +1,195 @@
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;  /* Adjust font size for smaller screens */
+    }
+
+    header {
+        padding: 10px;
+    }
+    
+    .container {
+        width: 100%;  /* Full-width layout for small screens */
+    }
+}
+
+
+body {
+    background-image: url("https://static.animecorner.me/2024/04/1712900913-6965.webp");
+    background-size: cover; /* Ensure it covers the entire screen */
+    background-position: center; /* Centers the background image */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    position: relative; /* Ensure that pseudo-element can be positioned absolutely */
+}
+
+
+
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Spreads content evenly */
+    align-items: center; /* Centers items vertically */
+    height: 120px;
+    background-color: black;
+    padding: 0 20px; /* Adds padding on the sides for spacing */
+}
+
+#Top-Bar img {
+    height: 120px; /* Ensures the image has a consistent height */
+    object-fit: contain; /* Prevents image distortion */
+}
+
+button {
+    background: none; /* Removes button background */
+    border: none; /* Removes border */
+    color: white; /* Sets text color */
+    font-size: 16px; /* Adjusts font size */
+    cursor: pointer; /* Indicates it's clickable */
+    transition: 0.3s ease; /* Smooth hover effect */
+}
+.button-container {
+    position: absolute; /* Position this container absolutely within the body */
+    top: 50px;  /* Adjust the top position */
+    right: 20px;  /* Adjust the right position */
+    justify-content: flex-end;  /* Aligns buttons to the right side */
+    text-decoration: none;
+}
+button:hover {
+    opacity: 0.7; /* Changes opacity when hovering */
+}
+
+button:focus {
+    outline: none; /* Remove outline on focus */
+}
+
+.invisible-button1, .invisible-button2 {
+    font-size: 18px; /* Increases button font size */
+    text-transform: uppercase; /* Makes the text uppercase */
+    margin-left: 50px;  /* Adds space between buttons */
+}
+
+.intro-container{
+    justify-content: center;
+
+}
+
+a {
+    text-decoration: none;
+}
+ h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 40px;
+}
+ h2 {
+    background-color: rgb(19, 19, 19);
+    padding: 30px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;  /* Stack h2 content vertically */
+    justify-content: center;  /* Centers content inside the h2 */
+    gap: 10px;  /* Adds space between the p and the h2 title */
+    width: 500px;  /* Set fixed width */
+    overflow: auto;
+
+}
+#section1{
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    
+}
+.intro-container {
+    display: flex;
+    justify-content: center;  /* Centers content horizontally */
+    align-items: center;      /* Centers content vertically */
+    gap: 100px;                /* Adds space between iframe and h1 */
+    max-width: 100%;          /* Prevents overflow */
+    padding: 20px;            /* Optional padding */
+}
+
+p{
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h2 p {
+    margin: 0;  /* Removes default margin for p */
+    line-height: 1.5;  /* Adjust line height for spacing between text lines */
+}
+.big-button{
+    background-color: orange;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+
+    font-size: 40px;
+    padding: 20px;
+    width: 500px;
+    border-radius: 10px;
+
+    display: block;   /* Makes the button a block-level element */
+    margin: 10px auto;   
+    text-align: center;
+
+}
+.about-container{
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    background-color: rgb(44, 44, 44);
+    justify-content: center;
+    padding: 50px;
+
+}
+h3{
+    font-size: 50px;
+    color: azure;
+}
+
+.bocchi-container{
+    background-color: rgb(255, 105, 180);
+    display: flex;
+    padding: 80px;
+}
+.bocchi-container img{
+    height: 500px;
+}
+.kita-container{
+    background-color: rgb(255, 20, 67);
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 80px;
+}
+.kita-container img{
+    height: 500px;
+}
+.nijika-container{
+    background-color: rgb(235, 208, 52);
+    display: flex;
+    padding: 80px;
+}
+.nijika-container img{
+    height: 500px;
+}
+    
+.ryo-container{
+    background-color: rgb(57, 57, 255);
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 80px;
+}
+.ryo-container img{
+    height: 500px;
+}
+.footer-container{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;  /* Stack the items vertically */
+    align-items: center;     /* Center the items horizontally */
+    padding: 20px;
+}
