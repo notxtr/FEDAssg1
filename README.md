@@ -21,6 +21,6 @@ Information about each of the band members were copied from the Bocchi The Rock 
 ### Content
 
 ### Media
-- The photos used in this site were obtained from Google and the Bocchi The Rock Fandom Wiki website
+- The photos used in this site were obtained from Google, the Bocchi The Rock Fandom Wiki website, and wikipedia
 ### Acknowledgements
 - I received inspiration for this project from the existing "Bocchi The Rock" anime.
