@@ -62,28 +62,30 @@ a {
 
 section {
     background-color: rgb(63, 63, 63);
-    height: 1000px;
     display: flex;
     padding: 60px;
     flex-direction: row;
 }
 
+/* Modify the product-container to align the image and details side by side */
 .product-container {
-    display: flex;  /* Use flexbox to align buttons and image side by side */
-    align-items: center;  /* Vertically center items */
-    justify-content: center;  /* Center all content horizontally */
-    width: 60%;
-}
-
-.product-container img {
+    display: flex; /* Use flexbox to align the image and the arrows side by side */
+    align-items: center; /* Vertically align both elements to the center */
+    justify-content: center; /* Center content horizontally */
     width: 100%;
-    height: 600px;
-    object-fit: contain;
-    margin: 15px; /* Adjust margins around the image */
-    transition: transform 0.3s ease; /* Smooth transition for image change */
-    transform: translateY(-30px); /* Moves the image up by 30px */
 }
 
+/* Ensure the image inside product-container takes up 60% */
+.product-container img {
+    width: 80%; /* Make the image take up 80% of the width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    transform: translateY(-30px); /* Optional: Adjust vertical position */
+    margin: 0 15px; /* Space between image and arrows */
+}
+
+/* Adjust the button container for the arrows */
 .button {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
@@ -91,7 +93,6 @@ section {
     padding: 10px;
     cursor: pointer;
     font-size: 24px;
-    z-index: 10;
     transition: background-color 0.3s ease;
 }
 
@@ -99,31 +100,43 @@ section {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* Position buttons within the product-container */
+.left, .right {
+    display: inline-block;
+    z-index: 10;
+}
+
+/* Adjust the left button */
 .left {
-    margin-right: 15px; /* Space between left button and image */
+    margin-right: 10px; /* Space between left button and image */
 }
 
+/* Adjust the right button */
 .right {
-    margin-left: 15px; /* Space between right button and image */
+    margin-left: 10px; /* Space between right button and image */
 }
 
+/* Adjust details-container to sit next to the image */
 .details-container {
     background-color: rgb(31, 31, 31);
     display: flex;
     padding: 50px;
-    margin-left: 50px;
+    justify-content: space-between; /* Ensures space between elements */
     flex-direction: column;
     border-radius: 20px;
-    width: 40%;
+    width: 40%; /* Make the details-container take up the remaining 40% of space */
+    height: 100%; /* Ensure it takes up the full height available */
+    align-items: flex-start; /* Align text to the left */
 }
 
- b {
+.details-container b {
     color: aliceblue;
-    font-size: 20px;
+    font-size: 30px;
     display:flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 10px;
     
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -132,6 +145,23 @@ section {
     color: rgb(255, 191, 63);
     font-size: 60px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buynow {
+    font-family: 'Poppins', sans-serif;
+    background-color: #07dd00; /* A distinct background color for the button */
+    color: white; /* White text */
+    font-size: 20px; /* Font size for the button */
+    padding: 15px 30px; /* Padding around the button */
+    border: none; /* Removes any default border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Shows pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
 }
 
 .footer-container {
