@@ -69,8 +69,9 @@ section {
 }
 
 .product-container {
-    position: relative;
-    display: inline-block;
+    display: flex;  /* Use flexbox to align buttons and image side by side */
+    align-items: center;  /* Vertically center items */
+    justify-content: center;  /* Center all content horizontally */
     width: 60%;
 }
 
@@ -78,14 +79,12 @@ section {
     width: 100%;
     height: 600px;
     object-fit: contain;
-    margin-bottom: 15px;
+    margin: 15px; /* Adjust margins around the image */
     transition: transform 0.3s ease; /* Smooth transition for image change */
+    transform: translateY(-30px); /* Moves the image up by 30px */
 }
 
 .button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
@@ -93,14 +92,19 @@ section {
     cursor: pointer;
     font-size: 24px;
     z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .left {
-    left: -40px;
+    margin-right: 15px; /* Space between left button and image */
 }
 
 .right {
-    right: -40px;
+    margin-left: 15px; /* Space between right button and image */
 }
 
 .details-container {
@@ -113,11 +117,14 @@ section {
     width: 40%;
 }
 
-.details-container b {
+ b {
     color: aliceblue;
     font-size: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-bottom: 10px;
+    
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -125,4 +132,13 @@ section {
     color: rgb(255, 191, 63);
     font-size: 60px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer-container {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;  /* Stack the items vertically */
+    align-items: center;     /* Center the items horizontally */
+    padding: 10px;
 }
