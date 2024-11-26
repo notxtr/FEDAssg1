@@ -6,16 +6,18 @@
     header {
         padding: 10px;
     }
-    
+
     .container {
         width: 100%;  /* Full-width layout for small screens */
     }
 }
+
 body {
     margin: 0; /* Removes default margin */
     padding: 0; /* Removes default padding */
     position: relative; /* Ensure that pseudo-element can be positioned absolutely */
 }
+
 .flex-container {
     display: flex;
     justify-content: space-between; /* Spreads content evenly */
@@ -39,13 +41,15 @@ button {
     transition: 0.3s ease; /* Smooth hover effect */
     outline: none;
 }
+
 .button-container {
     position: absolute; /* Position this container absolutely within the body */
     top: 50px;  /* Adjust the top position */
     right: 20px;  /* Adjust the right position */
+    display: flex; /* Align buttons horizontally */
     justify-content: flex-end;  /* Aligns buttons to the right side */
-    text-decoration: none;
 }
+
 button:hover {
     opacity: 0.7; /* Changes opacity when hovering */
 }
@@ -67,15 +71,14 @@ section {
     flex-direction: row;
 }
 
-/* Modify the product-container to align the image and details side by side */
+/* Product container */
 .product-container {
     display: flex; /* Use flexbox to align the image and the arrows side by side */
     align-items: center; /* Vertically align both elements to the center */
     justify-content: center; /* Center content horizontally */
-    width: 100%;
+    width: 60%;
 }
 
-/* Ensure the image inside product-container takes up 60% */
 .product-container img {
     width: 80%; /* Make the image take up 80% of the width */
     height: auto; /* Maintain aspect ratio */
@@ -85,7 +88,7 @@ section {
     margin: 0 15px; /* Space between image and arrows */
 }
 
-/* Adjust the button container for the arrows */
+/* Button styling */
 .button {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
@@ -100,44 +103,40 @@ section {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Position buttons within the product-container */
 .left, .right {
     display: inline-block;
     z-index: 10;
 }
 
-/* Adjust the left button */
 .left {
     margin-right: 10px; /* Space between left button and image */
 }
 
-/* Adjust the right button */
 .right {
     margin-left: 10px; /* Space between right button and image */
 }
 
-/* Adjust details-container to sit next to the image */
+/* Details container */
 .details-container {
     background-color: rgb(31, 31, 31);
     display: flex;
-    padding: 50px;
-    justify-content: space-between; /* Ensures space between elements */
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* Center the content inside */
+    padding: 50px;
     border-radius: 20px;
-    width: 40%; /* Make the details-container take up the remaining 40% of space */
-    height: 100%; /* Ensure it takes up the full height available */
-    align-items: flex-start; /* Align text to the left */
+    width: 40%; /* Details container takes up 40% of the available space */
+    height: 100%; /* Stretch to match the height of the image */
 }
 
 .details-container b {
     color: aliceblue;
     font-size: 30px;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 10px;
-    
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -147,28 +146,62 @@ section {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+/* Dropdown Label */
+.dropdown-label {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
+
+/* Styling for the quantity dropdown */
+.quantity-dropdown {
+    background-color: #333;
+    color: white;
+    border: 2px solid #ff6f00;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    width: 60%; /* Make dropdown take up 60% of the width of the container */
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.quantity-dropdown option {
+    background-color: #333;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.quantity-dropdown:hover {
+    border-color: #e65c00; /* Hover effect for the dropdown */
+}
+
+/* Buy Now Button */
 .buynow {
+    margin-top: 30px;
     font-family: 'Poppins', sans-serif;
     background-color: #07dd00; /* A distinct background color for the button */
-    color: white; /* White text */
-    font-size: 20px; /* Font size for the button */
-    padding: 15px 30px; /* Padding around the button */
-    border: none; /* Removes any default border */
-    border-radius: 10px; /* Rounded corners */
-    cursor: pointer; /* Shows pointer cursor on hover */
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    color: white;
+    font-size: 40px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.buynow:hover {
+    background-color: #06b200; /* Darker green on hover */
 }
 
 .footer-container {
     background-color: black;
     display: flex;
     justify-content: center;
-    flex-direction: column;  /* Stack the items vertically */
-    align-items: center;     /* Center the items horizontally */
-    padding: 10px;
-}
+    flex-direction: column; /* Stack the items vertically */
+    align-items: center; /* Center the items horizontally */
+    padding: 10px;}
