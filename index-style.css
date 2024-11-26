@@ -191,5 +191,5 @@ h3{
     justify-content: center;
     flex-direction: column;  /* Stack the items vertically */
     align-items: center;     /* Center the items horizontally */
-    padding: 20px;
+    padding: 10px;
 }
