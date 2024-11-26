@@ -60,11 +60,18 @@ a {
     margin-left: 50px;  /* Adds space between buttons */
 }
 
-section{
+section {
     background-color: rgb(63, 63, 63);
     height: 1000px;
     display: flex;
     padding: 60px;
+    flex-direction: row;
+}
+
+.product-container {
+    position: relative;
+    display: inline-block;
+    width: 60%;
 }
 
 .product-container img {
@@ -72,4 +79,50 @@ section{
     height: 600px;
     object-fit: contain;
     margin-bottom: 15px;
+    transition: transform 0.3s ease; /* Smooth transition for image change */
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+}
+
+.left {
+    left: -40px;
+}
+
+.right {
+    right: -40px;
+}
+
+.details-container {
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    padding: 50px;
+    margin-left: 50px;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 40%;
+}
+
+.details-container b {
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.details-container strong {
+    color: rgb(255, 191, 63);
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
