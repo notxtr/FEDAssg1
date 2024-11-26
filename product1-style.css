@@ -6,11 +6,46 @@
     header {
         padding: 10px;
     }
-
+    
     .container {
         width: 100%;  /* Full-width layout for small screens */
     }
+
+    /* Adjust buttons and other elements for mobile */
+    button {
+        font-size: 18px; /* Increase font size on small screens */
+        padding: 15px 25px; /* Increase padding for easier tapping */
+    }
+
+    .quantity-dropdown {
+        width: 100%; /* Make dropdown take full width of container */
+        padding: 15px; /* Increase padding for better touch interaction */
+    }
+
+    .buynow {
+        font-size: 30px; /* Make Buy Now button bigger for mobile */
+        padding: 15px 25px; /* Add padding for easier clicking/tapping */
+    }
+
+    section {
+        flex-direction: column; /* Stack content vertically on small screens */
+        padding: 30px;  /* Adjust padding */
+    }
+
+    .product-container img {
+        width: 70%; /* Adjust the image width for smaller screens */
+    }
+
+    .details-container {
+        width: 100%;  /* Make details container take full width */
+        padding: 30px; /* Adjust padding */
+    }
+
+    .footer-container img {
+        width: 150px; /* Reduce the image size in footer on smaller screens */
+    }
 }
+
 
 body {
     margin: 0; /* Removes default margin */
