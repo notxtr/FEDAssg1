@@ -17,10 +17,10 @@ In the Merchandise section, they can select one product to view, and read all of
 
 To return to the homepage, users would have to click on the Kessoku Band logo on the top left of the screen.
 ## Credits
-Information about each of the band members were copied from the Bocchi The Rock Fandom website.
+Information about each of the band members were copied from the Bocchi The Rock Fandom website. Images of merchandise are taken from the AmiAmi e-commerce website
 ### Content
 
 ### Media
 - The photos used in this site were obtained from Google and the Bocchi The Rock Fandom Wiki website
 ### Acknowledgements
-- I received inspiration for this project from the existing "Bocchi The Rock" anime, as well as some layouts from the AmiAmi e-commerce website
+- I received inspiration for this project from the existing "Bocchi The Rock" anime.
