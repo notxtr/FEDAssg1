@@ -9,6 +9,71 @@
     
     .container {
         width: 100%;  /* Full-width layout for small screens */
+        padding: 0 10px;  /* Optional padding for mobile */
+    }
+
+    h1 {
+        font-size: 1.5rem;  /* Adjust font size for mobile */
+        padding: 20px;
+    }
+
+    .big-button {
+        width: 90%;  /* Make the button take up most of the width */
+        font-size: 30px;  /* Smaller font size for mobile */
+        padding: 15px;  /* Reduce padding */
+    }
+
+    .intro-container {
+        flex-direction: column;  /* Stack elements vertically on small screens */
+        gap: 20px;  /* Add space between items */
+        padding: 10px;  /* Optional padding */
+    }
+
+    .about-container {
+        flex-direction: column;  /* Stack elements vertically */
+        padding: 30px 10px;  /* Add padding on mobile */
+    }
+
+    .flex-container {
+        flex-direction: column;  /* Stack content vertically on small screens */
+        align-items: center;  /* Center content */
+        height: auto;  /* Allow the container to adjust height */
+    }
+
+    .flex-container img {
+        width: 100%;  /* Make images responsive */
+        height: auto;
+    }
+
+    .button-container {
+        position: static;  /* Reset absolute positioning on mobile */
+        width: 100%;  /* Full-width buttons */
+        text-align: center;
+    }
+
+    /* Adjust h2 width and padding for mobile */
+    h2 {
+        width: 100%;
+        padding: 20px;
+        font-size: 1.3rem;
+        margin: 10px 0;
+    }
+
+    .bocchi-container img, 
+    .kita-container img, 
+    .nijika-container img, 
+    .ryo-container img {
+        height: auto;  /* Ensure images scale properly on small screens */
+        max-width: 100%;  /* Make sure images don’t overflow */
+    }
+
+    .footer-container {
+        padding: 20px;
+    }
+
+    /* Additional tweaks for text in h2 */
+    h2 p {
+        font-size: 1rem;
     }
 }
 
