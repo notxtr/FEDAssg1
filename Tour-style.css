@@ -15,6 +15,7 @@ body {
     margin: 0; /* Removes default margin */
     padding: 0; /* Removes default padding */
     position: relative; /* Ensure that pseudo-element can be positioned absolutely */
+    font-family: Arial, sans-serif; /* Set a global font for consistency */
 }
 .flex-container {
     display: flex;
@@ -58,6 +59,29 @@ a {
     font-size: 18px; /* Increases button font size */
     text-transform: uppercase; /* Makes the text uppercase */
     margin-left: 50px;  /* Adds space between buttons */
+}
+
+section{
+    background-color: rgb(52, 52, 52);
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.title {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  /* Dark overlay */
+        url("https://www.nme.com/wp-content/uploads/2023/01/bocchi-the-rock@2000x1270.jpg");  /* Your background image */
+    background-size: cover;
+    background-position: 50% 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    color: white; /* Ensure text is visible over the darkened background */
 }
 
 .footer-container{

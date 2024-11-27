@@ -66,6 +66,7 @@ body {
     margin: 0; /* Removes default margin */
     padding: 0; /* Removes default padding */
     position: relative; /* Ensure that pseudo-element can be positioned absolutely */
+    font-family: Arial, sans-serif; /* Set a global font for consistency */
 }
 
 .flex-container {
