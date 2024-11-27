@@ -6,9 +6,23 @@
     header {
         padding: 10px;
     }
-    
-    .container {
-        width: 100%;  /* Full-width layout for small screens */
+
+    .concert-buttons {
+        grid-template-columns: 1fr;  /* Stack buttons in one column on small screens */
+        width: 100%;  /* Ensure the buttons take full width on small screens */
+        padding: 10px;  /* Optional: Add some padding around the container */
+    }
+
+    .concert-button {
+        font-size: 14px;  /* Adjust font size for mobile */
+        padding: 12px 24px;  /* Adjust padding for mobile devices */
+        text-align: center;
+    }
+
+    .concert-button:hover {
+        /* Disable hover effect on mobile */
+        transform: none;  /* Remove hover transform effect */
+        opacity: 1; /* Ensure the button doesn't change opacity on mobile */
     }
 }
 body {
@@ -86,6 +100,12 @@ h1 {
     color: white; /* Ensure text is visible over the darkened background */
 }
 
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(54, 54, 54);
+}
 h2 {
     color: white;
     size: 100px;
@@ -94,16 +114,90 @@ h2 {
 
 .dates{
     display: flex;
-    background-color: rgb(69, 69, 69);
+    background-color: rgb(30, 30, 30);
     align-items: center;
     justify-content: center;
 
 }
 
-.dates img{
-    max-width: 800px;
-    height: auto; /* Height will adjust to maintain the aspect ratio */
+
+/* Container to hold the buttons */
+.concert-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* Create two equal columns */
+    grid-gap: 90px;  /* Increase space between buttons */
+    max-width: 80%;  /* Container takes up 80% of the screen width */
+    margin: 20px auto;  /* Center the container horizontally */
+    padding: 10px;  /* Add padding around the container */
 }
+
+/* Styling for each individual button */
+.concert-button {
+    display: block;  /* Make the <a> tag behave like a block element */
+    padding: 15px;  /* Add padding inside the button */
+    color: white;  /* White text */
+    text-align: center;  /* Center the text inside the button */
+    font-size: 18px;  /* Font size */
+    text-decoration: none;  /* Remove underline from the link */
+    border-radius: 5px;  /* Rounded corners */
+    font-weight: bold;  /* Make the text bold */
+    transition: transform 0.3s ease; /* Smooth transition for the scale effect */
+    width: 100%;  /* Make each button take full width of its container */
+}
+
+/* Hover effect for buttons */
+.concert-button:hover {
+    transform: scale(1.2); /* Enlarge the button by 20% */
+}
+
+#singapore{
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  /* Dark overlay */
+        url("https://www.traveltalktours.com/wp-content/uploads/2023/12/mike-enerio-7ryPpZK1qV8-unsplash-1-scaled.jpg");  /* Your background image */
+    background-size: cover;
+    background-position: 50% 60%;
+}
+
+#seoul{
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  /* Dark overlay */
+        url("https://live.staticflickr.com/1711/24060681624_26ebed00b7_b.jpg");  /* Your background image */
+    background-size: cover;
+    background-position: 50% 40%;
+}
+
+#london{
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  /* Dark overlay */
+        url("https://i2-prod.mylondon.news/incoming/article25070283.ece/ALTERNATES/s615b/0_GettyImages-1313895046.jpg");  /* Your background image */
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#newyork{
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  /* Dark overlay */
+        url("https://media.istockphoto.com/id/502846306/photo/lower-manhattan-skyline.jpg?s=612x612&w=0&k=20&c=RdzbupJ24bBmg9_17nxvOqdpMjhZMw78Pb3QlxgSIV8=");  /* Your background image */
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#sanfrancisco{
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  /* Dark overlay */
+        url("https://media.istockphoto.com/id/978985624/photo/aerial-cityscape-view-of-san-francisco-and-the-bay-bridge-at-night.jpg?s=612x612&w=0&k=20&c=Owcp2SVVVmfTS0EVtsI8ac_5lMUK2Agb5tGpPqHEZUQ=");  /* Your background image */
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#sydney{
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  /* Dark overlay */
+        url("https://media.istockphoto.com/id/1256052948/photo/sydney-opera-house-close-up.jpg?s=612x612&w=0&k=20&c=whIj_OHD1xUfx9rgcLaKC2V_AjOJZb24IQOCcKrxaCM=");  /* Your background image */
+    background-size: cover;
+    background-position: 50% 65%;
+}
+
 .footer-container{
     background-color: black;
     display: flex;
