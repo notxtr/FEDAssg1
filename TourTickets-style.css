@@ -1,0 +1,49 @@
+body {
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    position: relative; /* Ensure that pseudo-element can be positioned absolutely */
+    font-family: Arial, sans-serif; /* Set a global font for consistency */
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Spreads content evenly */
+    align-items: center; /* Centers items vertically */
+    height: 120px;
+    background-color: black;
+    padding: 0 20px; /* Adds padding on the sides for spacing */
+}
+
+#Top-Bar img {
+    height: 120px; /* Ensures the image has a consistent height */
+    object-fit: contain; /* Prevents image distortion */
+}
+
+button {
+    background: none; /* Removes button background */
+    border: none; /* Removes border */
+    color: white; /* Sets text color */
+    font-size: 16px; /* Adjusts font size */
+    cursor: pointer; /* Indicates it's clickable */
+    transition: 0.3s ease; /* Smooth hover effect */
+    outline: none;
+}
+.button-container {
+    position: absolute; /* Position this container absolutely within the body */
+    top: 50px;  /* Adjust the top position */
+    right: 20px;  /* Adjust the right position */
+    justify-content: flex-end;  /* Aligns buttons to the right side */
+    text-decoration: none;
+}
+button:hover {
+    opacity: 0.7; /* Changes opacity when hovering */
+}
+
+a {
+    text-decoration: none;
+}
+
+.invisible-button1, .invisible-button2 {
+    font-size: 18px; /* Increases button font size */
+    text-transform: uppercase; /* Makes the text uppercase */
+    margin-left: 50px;  /* Adds space between buttons */
+}
