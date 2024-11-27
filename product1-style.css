@@ -115,6 +115,8 @@ a {
     margin-left: 50px;  /* Adds space between buttons */
 }
 
+
+
 section {
     background-color: rgb(63, 63, 63);
     display: flex;
@@ -165,6 +167,16 @@ section {
 
 .right {
     margin-left: 10px; /* Space between right button and image */
+}
+
+h1{
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    margin: 0;
 }
 
 /* Details container */
