@@ -1,5 +1,5 @@
 # FED Assignment 1
-In this assignment, I am creating the front end of a website for a fictional band known as Kessoku Band.
+In this assignment, I will be creating the front end of a website for a fictional band known as Kessoku Band.
  
 ## Design Process
  
