@@ -1,15 +1,10 @@
-function updateQuantity(change) {
-    const adultInput = document.getElementById("adultQuantity");
-    let newQuantity = parseInt(adultInput.value) + change;
-    if (newQuantity >= 0) {
-        adultInput.value = newQuantity;
-    }
-}
+function updateQuantity(ticketType, change) {
+    // Get the input element based on the ticket type
+    const input = document.getElementById(ticketType + 'Quantity');
+    let newQuantity = parseInt(input.value) + change;
 
-function updateQuantityChild(change) {
-    const childInput = document.getElementById("childQuantity");
-    let newQuantity = parseInt(childInput.value) + change;
+    // Make sure the quantity is not negative
     if (newQuantity >= 0) {
-        childInput.value = newQuantity;
+        input.value = newQuantity;
     }
 }

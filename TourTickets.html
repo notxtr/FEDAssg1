@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="TourTickets-style.css">
     </head>
     <body>
+        <script src="TourTickets.js"></script>
         <header>
             <div class="flex-container">
                 <div class="box" id="Top-Bar">
@@ -39,26 +40,38 @@
         <section class="ticket-section">
             <h2 class="ticket-title">Choose Your Tickets</h2>
             
-            <div class="ticket-type">
-                <span>Adult (18+):</span>
-                <span class="ticket-price">$20.00</span>
-            </div>
-            
-            <div class="counter">
-                <button onclick="updateQuantity(-1)">-</button>
-                <input id="adultQuantity" type="number" value="0" min="0" readonly />
-                <button onclick="updateQuantity(1)">+</button>
-            </div>
-        
-            <div class="ticket-type">
-                <span>Child (Under 18):</span>
-                <span class="ticket-price">$10.00</span>
-            </div>
-            
-            <div class="counter">
-                <button onclick="updateQuantityChild(-1)">-</button>
-                <input id="childQuantity" type="number" value="0" min="0" readonly />
-                <button onclick="updateQuantityChild(1)">+</button>
+            <!-- Youth Ticket -->
+    <div class="ticket-type">
+        <div class="ticket-name">
+            <span>Youth 15-18 Years Old</span>
+        </div>
+        <div class="ticket-price">
+            <span>98 SGD</span>
+        </div>
+        <div class="counter">
+            <button onclick="updateQuantity('youth', -1)">-</button>
+            <input id="youthQuantity" type="number" value="0" min="0" />
+            <button onclick="updateQuantity('youth', 1)">+</button>
+        </div>
+    </div>
+
+    <!-- Adult Ticket -->
+    <div class="ticket-type">
+        <div class="ticket-name">
+            <span>Adult</span>
+        </div>
+        <div class="ticket-price">
+            <span>128 SGD</span>
+        </div>
+        <div class="counter">
+            <button onclick="updateQuantity('adult', -1)">-</button>
+            <input id="adultQuantity" type="number" value="0" min="0" />
+            <button onclick="updateQuantity('adult', 1)">+</button>
+        </div>
+    </div>
+
+            <div class="continue">
+                <button>Continue</button>
             </div>
         </section>
     </body>
