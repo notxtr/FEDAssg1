@@ -9,17 +9,17 @@ Wireframe: https://www.figma.com/design/7Ct2TBmD8XGkj0JlQk31he/FED_s10267163_cad
 
 
 ## Features
-In this website, It has features where you can book concert tickets, buy merchandise, and view information about each of the members of Kessoku Band. At the footer of all of the html pages except TourTickets.html, users can click on the "INSTAGRAM" or "X (TWITTER)" button, which would transport users to the following Bocchi The Rock accounts.
+In this website, It has features where you can book concert tickets, buy merchandise, and view information about each of the members of Kessoku Band. At the footer of all of the html pages except TourTickets.html, users can click on the "INSTAGRAM" or "X (Twitter)" button, which would transport users to the following Bocchi The Rock accounts.
 
 On the home page, users would immediately see the surface details about the 2024 World Tour, which most users are here for. Scrolling down the home page would lead you to a section where you can learn more about each of the band members. The Tour Info button at the header, as well as the "Book Tickets Now!" button would lead you to the same Tour.html page.
 
-In the booking concert tickets section, users would have to choose one destination in a single fixed date, then they can choose the number of tickets they would like to buy.
+In the tour info section, users would have to choose one destination in a single fixed date, then they can choose the number of tickets they would like to buy.
 
 Once they have picked a location, they can choose the number of youth/ adult tickets to buy. The continue button at the bottom of the screen will turn from red to green as long as they have picked at least one youth or adult ticket.
  
 In the Merchandise section, they can select one product to view, and read all of its details. Such as its contents and dimensions.
 
-When viewing one of the merchandise products, the user can choose the quantity they want, as well as being able to swap images with the left and right buttons.
+When viewing the merchandise product, the user can choose the quantity they want, as well as being able to swap images with the left and right buttons.
 
 To return to the homepage, users would have to click on the logo at the top left of the screen.
 
