@@ -182,3 +182,38 @@ input[type="number"]::-webkit-inner-spin-button {
     font-weight: bold;
     cursor: pointer;
 }
+
+/* Mobile-friendly layout */
+@media screen and (max-width: 768px) {
+    .ticket-type {
+        flex-direction: column; /* Stack the ticket name and price vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .ticket-name, .ticket-price {
+        margin-bottom: 10px;
+    }
+
+    .counter {
+        flex-direction: column; /* Stack buttons and input vertically */
+        align-items: center;
+    }
+
+    .counter button {
+        width: 40px; /* Make buttons smaller */
+        margin-bottom: 10px; /* Add space between buttons */
+    }
+
+    .counter input {
+        width: 60px; /* Slightly wider input field */
+    }
+
+    .continue button {
+        width: 100%; /* Full width button on mobile */
+        font-size: 24px; /* Slightly smaller font size */
+    }
+
+    .ticket-title {
+        font-size: 20px; /* Slightly smaller title font */
+    }
+}
