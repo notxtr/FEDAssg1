@@ -60,7 +60,7 @@ h1 {
 .title {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  /* Dark overlay */
-        url("https://a.storyblok.com/f/178900/1920x1080/d6245988c6/bocchi-the-rock.jpg");  /* Your background image */
+        url("images/merchandise.jpg");  /* Your background image */
     background-size: cover;
     background-position: 50% 20%;
     display: flex;
