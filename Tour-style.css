@@ -90,7 +90,7 @@ h1 {
 .title {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  /* Dark overlay */
-        url("https://www.nme.com/wp-content/uploads/2023/01/bocchi-the-rock@2000x1270.jpg");  /* Your background image */
+        url("images/tour.jpg");  /* Your background image */
     background-size: cover;
     background-position: 50% 25%;
     display: flex;
@@ -159,7 +159,7 @@ h2 {
 #singapore{
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  /* Dark overlay */
-        url("https://www.traveltalktours.com/wp-content/uploads/2023/12/mike-enerio-7ryPpZK1qV8-unsplash-1-scaled.jpg");  /* Your background image */
+        url("images/singapore.jpg");  /* Your background image */
     background-size: cover;
     background-position: 50% 60%;
 }
@@ -167,7 +167,7 @@ h2 {
 #seoul{
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  /* Dark overlay */
-        url("https://live.staticflickr.com/1711/24060681624_26ebed00b7_b.jpg");  /* Your background image */
+        url("images/seoul.jpg");  /* Your background image */
     background-size: cover;
     background-position: 50% 40%;
 }
@@ -175,7 +175,7 @@ h2 {
 #london{
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  /* Dark overlay */
-        url("https://i2-prod.mylondon.news/incoming/article25070283.ece/ALTERNATES/s615b/0_GettyImages-1313895046.jpg");  /* Your background image */
+        url("images/london.png");  /* Your background image */
     background-size: cover;
     background-position: 50% 50%;
 }
@@ -183,7 +183,7 @@ h2 {
 #newyork{
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  /* Dark overlay */
-        url("https://media.istockphoto.com/id/502846306/photo/lower-manhattan-skyline.jpg?s=612x612&w=0&k=20&c=RdzbupJ24bBmg9_17nxvOqdpMjhZMw78Pb3QlxgSIV8=");  /* Your background image */
+        url("images/newyork.jpg");  /* Your background image */
     background-size: cover;
     background-position: 50% 50%;
 }
@@ -191,7 +191,7 @@ h2 {
 #sanfrancisco{
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  /* Dark overlay */
-        url("https://media.istockphoto.com/id/978985624/photo/aerial-cityscape-view-of-san-francisco-and-the-bay-bridge-at-night.jpg?s=612x612&w=0&k=20&c=Owcp2SVVVmfTS0EVtsI8ac_5lMUK2Agb5tGpPqHEZUQ=");  /* Your background image */
+        url("images/san-francisco.jpg");  /* Your background image */
     background-size: cover;
     background-position: 50% 50%;
 }
@@ -199,7 +199,7 @@ h2 {
 #sydney{
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  /* Dark overlay */
-        url("https://media.istockphoto.com/id/1256052948/photo/sydney-opera-house-close-up.jpg?s=612x612&w=0&k=20&c=whIj_OHD1xUfx9rgcLaKC2V_AjOJZb24IQOCcKrxaCM=");  /* Your background image */
+        url("images/sydney.jpg");  /* Your background image */
     background-size: cover;
     background-position: 50% 65%;
 }
