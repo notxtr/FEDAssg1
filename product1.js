@@ -1,6 +1,6 @@
 // Array of product image URLs
 const productImages = [
-    "https://img.amiami.com/images/product/review/241/GOODS-04451318_01.jpg",
+    "images/product1.jpg",
     "https://img.amiami.com/images/product/review/241/GOODS-04451318_02.jpg", // Second image
     "https://img.amiami.com/images/product/bonus/241/GOODS-04451318_01.jpg"  // Third image
 ];
